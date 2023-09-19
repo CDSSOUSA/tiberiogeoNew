@@ -117,6 +117,15 @@
             "title": "Dinâmica Climática - 3º Ano",
             "link": "/text/DinamicaClimatica_1.pdf",
             "date": "01/08/2023"
+<<<<<<< HEAD
+=======
+        },
+        {
+            "id": "202309142255592842945113",
+            "title": "Impactos Ambientais - 3º ANO",
+            "link": "/text/SlideImpactosAmbientais_2023.pdf",
+            "date": "14/09/2023"
+>>>>>>> a59415ef2aeef7a3b90db381e1028452a86bc460
         }
     ],
     "text": [
@@ -173,6 +182,15 @@
             "title": "Dinâmica Climática - Material Extra - 3º ANO",
             "link": "/text/ClimasBrasil_MaterialExtra.pdf",
             "date": "01/08/2023"
+<<<<<<< HEAD
+=======
+        },
+        {
+            "id": "202309142253234312571236",
+            "title": "Impactos Ambientais - 3º ANO",
+            "link": "/text/ImpactosAmbientais_3Ano_1.pdf",
+            "date": "14/09/2023"
+>>>>>>> a59415ef2aeef7a3b90db381e1028452a86bc460
         }
     ]
 }
