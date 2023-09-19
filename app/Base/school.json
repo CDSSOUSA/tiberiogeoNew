@@ -111,6 +111,12 @@
             "title": "A Questão Ambiental - 3º ANO",
             "link": "/text/SlideMeioAmbiente_3Ano_Oficial.pdf",
             "date": "21/05/2023"
+        },
+        {
+            "id": "202308010739306712290354",
+            "title": "Dinâmica Climática - 3º Ano",
+            "link": "/text/DinamicaClimatica_1.pdf",
+            "date": "01/08/2023"
         }
     ],
     "text": [
@@ -155,6 +161,18 @@
             "title": "A Questão Ambiental - 3º ANO",
             "link": "/text/TextoQuestaoAmbiental_3Ano.pdf",
             "date": "21/05/2023"
+        },
+        {
+            "id": "202308010736421436754190",
+            "title": "Dinâmica Climática - 3º ANO",
+            "link": "/text/DinamicaClimatica.pdf",
+            "date": "01/08/2023"
+        },
+        {
+            "id": "202308010740422719518402",
+            "title": "Dinâmica Climática - Material Extra - 3º ANO",
+            "link": "/text/ClimasBrasil_MaterialExtra.pdf",
+            "date": "01/08/2023"
         }
     ]
 }
