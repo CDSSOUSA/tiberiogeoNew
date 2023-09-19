@@ -1,10 +1,196 @@
 {
     "exercicie": [
         {
+            "id": "202303121438183324958714",
+            "title": "O Espaço Geográfico e as Categorias Geográficas - 1º ANO",
+            "link": "/text/Exercício_Espaço_CategoriasGeograficas.pdf",
+            "date": "12/03/2023"
+        },
+        {
+            "id": "202303261528543519524163",
+            "title": "O Espaço Geográfico e a Construção do Capitalismo",
+            "link": "/text/exercicio-espaco-geografico-formacao-capitalismo.pdf",
+            "date": "26/03/2023"
+        },
+        {
+            "id": "202304022134527505329614",
+            "title": "A Velha Ordem Mundial - 3º ANO",
+            "link": "/text/ExercicioVelhaOrdemMundial_1.pdf",
+            "date": "02/04/2023"
+        },
+        {
+            "id": "202304072013256574135934",
+            "title": "Orientação  e Localização Geográfica - 1º ANO",
+            "link": "/text/Exercicio_LocalizacaoOrientacaoGeografica.pdf",
+            "date": "07/04/2023"
+        },
+        {
+            "id": "202305211224285285146097",
+            "title": "A Nova Ordem Mundial - 3° ANO",
+            "link": "/text/ExercicioNovaOrdemMundial_Oficial.pdf",
+            "date": "21/05/2023"
+        },
+        {
+            "id": "202306041232073324745251",
+            "title": "A Questão Ambiental - 3º ANO",
+            "link": "/text/Exercicio_QuestaoAmbiental.pdf",
+            "date": "04/06/2023"
+        },
+        {
+            "id": "202306041706132107215498",
+            "title": "A Cartografia e suas Projeções - 1º ANO",
+            "link": "/text/Exercicio_CartografiaProjecoes.pdf",
+            "date": "04/06/2023"
+        },
+        {
             "id": "202309190748162150397614",
             "title": "Dinâmica Climática ",
             "link": "/text/ExercicioDinamicaClimatica.pdf",
             "date": "19/09/2023"
+        }
+    ],
+    "evidences": [
+        {
+            "id": "202304160919423415372281",
+            "title": "Simulado da área de Humanas - 1º Bimestre (3º Ano)",
+            "link": "/text/Simulado_3Ano_Humanas_2023_1Bimestre.pdf",
+            "date": "16/04/2023"
+        },
+        {
+            "id": "202304160920323464170391",
+            "title": "Gabarito do Simulado da Área de Humanas - 1º Bimestre (3º Ano)",
+            "link": "/text/GabaritoSimuladoHumanas_1Bimestre_2023.pdf",
+            "date": "16/04/2023"
+        },
+        {
+            "id": "202304160925495341405227",
+            "title": "Avaliação do 1º ano sobre Espaço Geográfico e Categorias Geoigráficas",
+            "link": "/text/Avaliacao_1ano_Espaco_CategoriasGeográficas.pdf",
+            "date": "16/04/2023"
+        },
+        {
+            "id": "202306111828074472968511",
+            "title": "Simulado da Área de Humanas do 2º Bimestre - 3º ANO",
+            "link": "/text/Simulado_Area_Humanas_2_Bimestre_2023_TIBERIO.pdf",
+            "date": "11/06/2023"
+        },
+        {
+            "id": "202306111830304769134521",
+            "title": "Gabarito do Simulado da Área de Humanas do 2º Bimestre 3º ANO",
+            "link": "/text/GabaritoHumanas_3Ano_ABCD_2Bimestre.pdf",
+            "date": "11/06/2023"
+        }
+    ],
+    "slide": [
+        {
+            "id": "202302191027471517824369",
+            "title": "Slide O Espaço Geográfico e a Construção do Capitalismo",
+            "link": "/text/ConstrucaoEspacoGeograficoGlobalizacao.pdf",
+            "date": "19/02/2023"
+        },
+        {
+            "id": "202302262223522637540115",
+            "title": "Slide O  Espaço Geográfico e as Categorias Geográficas - SLIDE DO 1º ANO",
+            "link": "/text/SlideEspacoGeograficoCategoriasGeograficas.pdf",
+            "date": "26/02/2023"
+        },
+        {
+            "id": "202303261543531834106274",
+            "title": "A Velha Ordem Mundial",
+            "link": "/text/SlideVelhaOrdemMundial.pdf",
+            "date": "26/03/2023"
+        },
+        {
+            "id": "202304161417365932810471",
+            "title": "Nova Ordem Mundial - 3º ANO ",
+            "link": "/text/SlideNovaOrdemMundial_1.pdf",
+            "date": "16/04/2023"
+        },
+        {
+            "id": "202304232350412423689553",
+            "title": "A Cartografia e as Projeções Cartográficas - 1º ANO",
+            "link": "/text/RepresentacaoEspacoOficial.pdf",
+            "date": "23/04/2023"
+        },
+        {
+            "id": "202305211227328162923553",
+            "title": "A Questão Ambiental - 3º ANO",
+            "link": "/text/SlideMeioAmbiente_3Ano_Oficial.pdf",
+            "date": "21/05/2023"
+        },
+        {
+            "id": "202308010739306712290354",
+            "title": "Dinâmica Climática - 3º Ano",
+            "link": "/text/DinamicaClimatica_1.pdf",
+            "date": "01/08/2023"
+        },
+        {
+            "id": "202309142255592842945113",
+            "title": "Impactos Ambientais - 3º ANO",
+            "link": "/text/SlideImpactosAmbientais_2023.pdf",
+            "date": "14/09/2023"
+        }
+    ],
+    "text": [
+        {
+            "id": "202302191025022305414367",
+            "title": "O Espaço Geográfico e a Construção do Capitalismo",
+            "link": "/text/EspacoGeografiaConstrucaoCapitalismo.pdf",
+            "date": "19/02/2023"
+        },
+        {
+            "id": "202302261818579243655378",
+            "title": "O Espaço e as Categorias Geográficas - TEXTO DO 1º ANO",
+            "link": "/text/Texto_1Ano_EspacoGeograficoCategoriasGeograficas.pdf",
+            "date": "26/02/2023"
+        },
+        {
+            "id": "202303261543171965523701",
+            "title": "A Velha Ordem Mundial",
+            "link": "/text/TextoVelhaOrdemMundial.pdf",
+            "date": "26/03/2023"
+        },
+        {
+            "id": "202303261559485142716534",
+            "title": "Orientação e Localização Geográfica - 1º ANO",
+            "link": "/text/Texto1Ano_LocalizacaoOrientacao.pdf",
+            "date": "26/03/2023"
+        },
+        {
+            "id": "202304022328545813134904",
+            "title": "A Nova Ordem Mundial",
+            "link": "/text/TextoNovaOrdemMundial.pdf",
+            "date": "02/04/2023"
+        },
+        {
+            "id": "202304232053282056243495",
+            "title": "A Cartografia e as Projeções Cartográficas - 1º ANO ",
+            "link": "/text/Texto_Cartografia_Projecoes.pdf",
+            "date": "23/04/2023"
+        },
+        {
+            "id": "202305211226445987132403",
+            "title": "A Questão Ambiental - 3º ANO",
+            "link": "/text/TextoQuestaoAmbiental_3Ano.pdf",
+            "date": "21/05/2023"
+        },
+        {
+            "id": "202308010736421436754190",
+            "title": "Dinâmica Climática - 3º ANO",
+            "link": "/text/DinamicaClimatica.pdf",
+            "date": "01/08/2023"
+        },
+        {
+            "id": "202308010740422719518402",
+            "title": "Dinâmica Climática - Material Extra - 3º ANO",
+            "link": "/text/ClimasBrasil_MaterialExtra.pdf",
+            "date": "01/08/2023"
+        },
+        {
+            "id": "202309142253234312571236",
+            "title": "Impactos Ambientais - 3º ANO",
+            "link": "/text/ImpactosAmbientais_3Ano_1.pdf",
+            "date": "14/09/2023"
         }
     ]
 }
