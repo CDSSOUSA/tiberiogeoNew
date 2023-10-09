@@ -11,16 +11,11 @@ class Quiz extends BaseController
 {
     private $erros;    
        
-    /**
-     * Method index
-     *
-     * @param int $position [explicite description]
-     *
-     * @return string
-     */
+  
+    
     public function index(int $position = 1): string
     {
-        
+
         $msg = [
             'message' => '',
             'alert' => ''

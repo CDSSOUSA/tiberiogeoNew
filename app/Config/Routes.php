@@ -56,6 +56,12 @@ $routes->get('/buildSchool', 'Build::buildSchool');
 $routes->post('/buildSchool/add', 'Build::addSchool');
 $routes->get('/buildSchool/delete/(:any)', 'Build::deleteSchool/$1');
 
+$routes->get('/buildQuiz', 'Build::buildQuiz');
+$routes->get('/buildQuiz/activeInactive/(:any)/(:any)', 'Build::activeInactive/$1/$2');
+$routes->get('/buildQuiz/addQuestion/(:any)', 'Build::addQuestion/$1');
+$routes->post('/buildQuiz/createQuestion', 'Build::createQuestion');
+
+$routes->post('/buildQuizMain/add', 'Build::buildQuizMain');
 
 $routes->post('/search', 'Search::index');
 $routes->get('/search/(:any)', 'Search::cloud/$1');

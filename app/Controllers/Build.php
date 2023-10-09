@@ -5,6 +5,7 @@ namespace App\Controllers;
 
 use App\Models\ArticleModel;
 use App\Controllers\BaseController;
+use App\Models\QuizModel;
 use App\Models\SchoolModel;
 
 class Build extends BaseController
@@ -791,6 +792,409 @@ class Build extends BaseController
 
         return $this->buildSchool();
       
+
+    }
+
+    public function buildQuiz()
+    {
+        $msg = [
+            'message' => '',
+            'alert' => ''
+        ];
+        if (session()->has('erro')) {
+            $this->erros = session('erro');
+            $msg = [
+                'message' => '<i class="fa fa-exclamation-triangle"></i> Opps! Erro(s) no preenchimento!',
+                'alert' => 'danger'
+            ];
+        }
+
+       
+
+        $quizMain = json_decode(file_get_contents(defineUrlDb().'quizMain.json'), true);       
+
+        $data = array(
+            'msgs' => $msg,
+            'erro' => $this->erros,
+            "data" => $quizMain,
+        );
+
+
+        $parser = \Config\Services::renderer();
+        $parser->setData($this->style);
+        $parser->setData($data);
+        $parser->setData($this->dataHeader);
+        $parser->setData($this->javascript);
+        return $parser->render('admin/buildQuiz');
+    }
+
+    public function buildQuizMain()
+    {
+        if ($this->request->getMethod() !== 'post') {
+            return redirect()->to('/build');
+        }
+        
+        $val = $this->validate(
+            [
+                'idQuiz'        => 'required',               
+            ],
+            [
+                'idQuiz'        => [
+                    'required' => 'O campo TÍTULO tem preenchimento obrigatório!',                    
+                ]               
+            ]
+        );
+
+        if (!$val) {
+            return redirect()->back()->withInput()->with('erro', $this->validator);
+        } else {
+            /*$blog['title'] = $this->request->getPost('title');
+            $blog['text'] = $this->request->getPost('text');
+            $blog['image-main'] = $this->request->getPost('image-main');
+            $blog['data_postagem'] = date('d/m/Y');*/
+
+
+
+            $dadosArticle = array(
+               
+                'idQuiz' => $this->request->getPost('idQuiz'),
+                'status' => 1
+               
+            );
+
+            // extrai a informação do ficheiro
+            $string = file_get_contents(defineUrlDb().'quizMain.json');
+            // faz o decode o json para uma variavel php que fica em array
+            $json = json_decode($string, true);
+
+            foreach ($json as &$elemento) {
+                if (isset($elemento['status'])) {
+                    $elemento['status'] = 0;
+                }
+            }
+
+            // aqui é onde adiciona a nova linha ao ao array assignment
+            $json[] = $dadosArticle;
+
+            // abre o ficheiro em modo de escrita
+            $fp = fopen(defineUrlDb().'quizMain.json', 'w');
+            // escreve no ficheiro em json
+            fwrite($fp, json_encode($json, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+            // fecha o ficheiro
+            fclose($fp);
+
+            //mkdir('./assets/img/codo',0775,true);
+            /*if(!is_dir('././assets/img/world/casa')){
+                mkdir('././assets/img/world/casa');
+            }*/
+            //$path='./assets/public/package/'.$package_id;
+
+            
+
+            /*if ($this->blog->save($blog)) {
+                $data['msgs'] = [
+                    'message' => '<i class="fas fa-exclamation-triangle"></i> Parabéns! Blog criado com sucesso!',
+                    'alert' => 'success'
+                ];
+                $data['title'] = 'Cadastrar Blog';
+                $data['erro'] = '';
+
+                return view('/admin/blog/cadastrar-blog', $data);
+            }*/
+            //return view('/admin/blog/cadastrar-blog', $data);
+
+          
+            $datas['msgs'] = [
+                'message' => '<i class="fa fa-exclamation-triangle"></i> Parabéns! Simulado criado com sucesso!',
+                'alert' => 'success',
+    
+            ];
+        }
+
+
+        $quizMain = json_decode(file_get_contents(defineUrlDb().'quizMain.json'), true);       
+
+        $data = array(
+            'msgs' => $datas['msgs']['message'],
+            'erro' => $this->erros,
+            "data" => $quizMain,
+        );
+
+        //return redirect()->to('buildQuiz');
+
+        $parser = \Config\Services::renderer();
+        $parser->setData($this->style);
+        $parser->setData($data);
+        $parser->setData($datas);
+        $parser->setData($this->dataHeader);
+        $parser->setData($this->javascript);
+        return $parser->render('admin/buildQuiz');
+    }
+
+    public function addQuestion($idQuizMain)
+    {
+        $msg = [
+            'message' => '',
+            'alert' => ''
+        ];
+        if (session()->has('erro')) {
+            $this->erros = session('erro');
+            $msg = [
+                'message' => '<i class="fa fa-exclamation-triangle"></i> Opps! Erro(s) no preenchimento!',
+                'alert' => 'danger'
+            ];
+        }
+
+        $a = $idQuizMain;       
+
+        $jsonQuiz = file_get_contents(defineUrlDb() . 'quiz.json');
+
+        $quizActive = json_decode($jsonQuiz, true);
+
+        $itensAtivos = array_filter($quizActive, function ($item) use ($a) {           
+            return $item['idQuiz'] == $a;
+        });     
+        
+
+        $quizMain = json_encode(array_values($itensAtivos));  
+
+        
+
+        $data = array(
+            'msgs' => $msg,
+            'erro' => $this->erros,
+            "data" => json_decode($quizMain,true),
+            'idQuizMain' => $idQuizMain
+        );
+
+
+        $parser = \Config\Services::renderer();
+        $parser->setData($this->style);
+        $parser->setData($data);
+        $parser->setData($this->dataHeader);
+        $parser->setData($this->javascript);
+        return $parser->render('admin/buildQuizAdd');
+
+    }
+
+    public function createQuestion()
+    {
+        if ($this->request->getMethod() !== 'post') {
+            return redirect()->to('/build');
+        }
+
+        $val = $this->validate(
+            [
+                'question'        => 'required',
+                'alternative-correct'        => 'required',               
+                'alternative-02'        => 'required',               
+                'alternative-03'        => 'required',               
+                'alternative-04'        => 'required',               
+                'alternative-05'        => 'required',               
+            ],
+            [
+                'question'        => [
+                    'required' => 'O campo tem preenchimento obrigatório!',                    
+                ],        
+                'alternative-correct'        => [
+                    'required' => 'O campo tem preenchimento obrigatório!',                    
+                ],               
+                'alternative-02'        => [
+                    'required' => 'O campo tem preenchimento obrigatório!',                    
+                ],               
+                'alternative-03'        => [
+                    'required' => 'O campo tem preenchimento obrigatório!',                    
+                ],               
+                'alternative-04'        => [
+                    'required' => 'O campo tem preenchimento obrigatório!',                    
+                ],               
+                'alternative-05'        => [
+                    'required' => 'O campo tem preenchimento obrigatório!',                    
+                ]              
+            ]
+        );
+
+        if (!$val) {
+            return redirect()->back()->withInput()->with('erro', $this->validator);
+        } 
+
+        $modelQuiz = new QuizModel;
+        $total = count(  json_decode($modelQuiz->jsonString,true));
+
+        $jsonQuiz = file_get_contents(defineUrlDb().'quiz.json');        
+        $json = json_decode($jsonQuiz, true);         
+
+
+        $dadosQuestion = array(
+               
+            'idQuiz' => $this->request->getPost('idQuizMain'),
+            'position' => $total +1,
+            'id' => generateId(10, false, false, true, false),
+            'question' => $this->request->getPost('question'),
+            'img' => $this->request->getPost('image-main'),
+            'question-sub' => $this->request->getPost('question-sub'),
+            'alternatives' => [
+                [ 
+                    'id' => generateId(10, false, false, true, false),
+                    'alternative' => $this->request->getPost('alternative-correct'),
+                    'correct' => true
+                ],
+                [ 
+                    'id' => generateId(10, false, false, true, false),
+                    'alternative' => $this->request->getPost('alternative-02'),
+                    'correct' => false
+                ],
+                [ 
+                    'id' => generateId(10, false, false, true, false),
+                    'alternative' => $this->request->getPost('alternative-03'),
+                    'correct' => false
+                ],
+                [ 
+                    'id' => generateId(10, false, false, true, false),
+                    'alternative' => $this->request->getPost('alternative-04'),
+                    'correct' => false
+                ],
+                [ 
+                    'id' => generateId(10, false, false, true, false),
+                    'alternative' => $this->request->getPost('alternative-05'),
+                    'correct' => false
+                ],
+            ],                
+            'status' => 'active',           
+        );
+            
+        shuffle($dadosQuestion['alternatives']);
+        
+        $json[] = $dadosQuestion;
+        $fp = fopen(defineUrlDb().'quiz.json', 'w');
+        fwrite($fp, json_encode($json, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));           
+        fclose($fp);
+
+
+
+        $msg = [
+            'message' => '',
+            'alert' => ''
+        ];
+
+        if (session()->has('erro')) {
+            $this->erros = session('erro');
+            $msg = [
+                'message' => '<i class="fa fa-exclamation-triangle"></i> Opps! Erro(s) no preenchimento!',
+                'alert' => 'danger'
+            ];
+        }
+
+        $a = $this->request->getPost('idQuizMain');       
+
+        $jsonQuiz = file_get_contents(defineUrlDb() . 'quiz.json');
+
+        $quizActive = json_decode($jsonQuiz, true);
+
+        $itensAtivos = array_filter($quizActive, function ($item) use ($a) {           
+            return $item['idQuiz'] == $a;
+        });     
+        
+
+        $quizMain = json_encode(array_values($itensAtivos)); 
+
+        $datas['msgs'] = [
+            'message' => '<i class="fa fa-exclamation-triangle"></i> Parabéns! Simulado criado com sucesso!',
+            'alert' => 'success',
+
+        ];
+        
+
+        $data = array(
+            'msgs' => $datas,
+            'erro' => $this->erros,
+            "data" => json_decode($quizMain,true),
+            'idQuizMain' => $a
+        );
+
+
+        $parser = \Config\Services::renderer();
+        $parser->setData($this->style);
+        $parser->setData($data);
+        $parser->setData($this->dataHeader);
+        $parser->setData($this->javascript);
+        return $parser->render('admin/buildQuizAdd');
+    }
+
+    public function activeInactive($opcao, $idQuizMain)
+    {
+       
+        $dadosArticle = array(
+               
+            'idQuiz' => $idQuizMain,
+            'status' => $opcao
+           
+        );
+        
+        $jsonFilePath = defineUrlDb() . 'quizMain.json'; // Caminho completo para o arquivo JSON
+
+        $string = file_get_contents($jsonFilePath);
+
+
+
+
+
+        // extrai a informação do ficheiro
+        //$string = file_get_contents(defineUrlDb().'quizMain.json');
+        // faz o decode o json para uma variavel php que fica em array
+        $json = json_decode($string, true);
+
+        foreach ($json as &$elemento) {
+            if (($elemento['idQuiz'] == $idQuizMain)) {
+                $elemento['status'] = 1;
+                //break;
+            } else {
+                //dd($idQuizMain);
+                $elemento['status'] = 0;
+            }
+        }
+        //dd($json);
+
+        $jsonDataUpdated = json_encode($json, JSON_PRETTY_PRINT);
+
+
+        file_put_contents($jsonFilePath, $jsonDataUpdated);
+
+
+        // aqui é onde adiciona a nova linha ao ao array assignment
+        //$json[] = $dadosArticle;
+
+        // abre o ficheiro em modo de escrita
+        //$fp = fopen(defineUrlDb().'quizMain.json', 'w');
+        // escreve no ficheiro em json
+        //fwrite($fp, json_encode($json, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+        // fecha o ficheiro
+        //fclose($fp);
+
+        $datas['msgs'] = [
+            'message' => '<i class="fa fa-exclamation-triangle"></i> Parabéns! Simulado criado com sucesso!',
+            'alert' => 'success',
+
+        ];
+
+        $quizMain = json_decode(file_get_contents(defineUrlDb().'quizMain.json'), true);       
+
+        $data = array(
+            'msgs' => $datas['msgs']['message'],
+            'erro' => $this->erros,
+            "data" => $quizMain,
+        );
+
+        //return redirect()->to('buildQuiz');
+
+        $parser = \Config\Services::renderer();
+        $parser->setData($this->style);
+        $parser->setData($data);
+        $parser->setData($datas);
+        $parser->setData($this->dataHeader);
+        $parser->setData($this->javascript);
+        return $parser->render('admin/buildQuiz');
+
 
     }
 }

@@ -569,3 +569,8 @@ function defineTypeSchool(string $type): string
             return "Provas";
     }
 }
+
+function defineStatus(string $status)
+{
+    return $status == 1 ? 'Ativo': 'Inativo';
+}

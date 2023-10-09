@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class QuizModel extends Model
 {
-    private $jsonString;
+    public $jsonString;
     
     /**
      * Method __construct
@@ -14,9 +14,32 @@ class QuizModel extends Model
      * @return void
      */
     public function __construct()
-    {
+    {       
 
-        $this->jsonString = file_get_contents(defineUrlDb() . 'quiz.json');
+        $jsonQuizMain = file_get_contents(defineUrlDb() . 'quizMain.json');
+        $quizMainActive = json_decode($jsonQuizMain, true);
+        $itensMainAtivos = array_filter($quizMainActive, function ($item) {
+             return $item['status'] === 1;
+            
+        });
+
+        $id = array_column($itensMainAtivos, 'idQuiz');
+
+        $a = $id[0];       
+
+        $jsonQuiz = file_get_contents(defineUrlDb() . 'quiz.json');
+
+        $quizActive = json_decode($jsonQuiz, true);
+
+        $itensAtivos = array_filter($quizActive, function ($item) use ($a) {
+            //echo "Comparando item 'idQuiz': " . $item['idQuiz'] . " com valor de 'a': " . $a . "<br>";
+            return $item['idQuiz'] == $a;
+        });     
+        
+
+        $this->jsonString = json_encode(array_values($itensAtivos));
+
+       
     }
     
         

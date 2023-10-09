@@ -1,5 +1,6 @@
 [
-    {   
+    {
+        "idQuiz": 1,
         "position": 1,
         "id": "2001239834567",
         "question": "Observe a imagem abaixo e responda:",
@@ -35,6 +36,7 @@
         "status": "active"
     },
     {
+        "idQuiz": 1,
         "position": 2,
         "id": "14566",
         "question": "Observe a imagem abaixo:",
@@ -70,69 +72,107 @@
         "status": "active"
     },
     {
+        "idQuiz": "1",
         "position": 3,
-        "id": "18666",
+        "id": "202310082059320198674432",
         "question": "A imagem abaixo mostra a situação da mulher no mercado de trabalho. Analise as afirmativas abaixo e em seguida assinale a alternativa que corresponda CORRETAMENTE a sua intenção. ",
         "img": "figura-03.png",
         "question-sub": "",
         "alternatives": [
             {
-                "id": "20091423423939834567899",
-                "alternative": "A situação da mulher no mercado de trabalho é muito cômoda, pois ela só exerce a função de secretária.",
-                "correct": false
-            },
-            {
-                "id": "156744444233333",
+                "id": "202310082059324293411605",
                 "alternative": "Que a mulher cada vez mais tem escolhido a profissão de técnica em informática.",
                 "correct": false
             },
             {
-                "id": "200123983343409875676",
-                "alternative": "Mostra que a mulher, em sua grande maioria, tem jornada dupla de trabalho.",
-                "correct": true
+                "id": "202310082059325794341650",
+                "alternative": "A situação de que a mulher, em geral, vem tendo filhos cada vez mais para poder ter auxilio por parte do governo.",
+                "correct": false
             },
             {
-                "id": "200145447883459235698676",
+                "id": "202310082059324033592561",
+                "alternative": "A situação da mulher no mercado de trabalho é muito cômoda, pois ela só exerce a função de secretária.",
+                "correct": false
+            },
+            {
+                "id": "202310082059321212406795",
                 "alternative": "A mulher nas últimas décadas vem perdendo espaço no mercado de trabalho para se dedicar exclusivamente dos afazeres do lar.",
                 "correct": false
             },
             {
-                "id": "20014544781283456337986",
+                "id": "202310082059322658952470",
+                "alternative": "Mostra que a mulher, em sua grande maioria, tem jornada dupla de trabalho.",
+                "correct": true
+            }
+        ],
+        "status": "active"
+    },
+    {
+        "idQuiz": "1",
+        "position": 4,
+        "id": "202310082104370587136423",
+        "question": "A imagem abaixo mostra a situação da mulher no mercado de trabalho. Analise as afirmativas abaixo e em seguida assinale a alternativa que corresponda CORRETAMENTE a sua intenção. ",
+        "img": "figura-03.png",
+        "question-sub": "",
+        "alternatives": [
+            {
+                "id": "202310082104371614239385",
+                "alternative": "Que a mulher cada vez mais tem escolhido a profissão de técnica em informática.",
+                "correct": false
+            },
+            {
+                "id": "202310082104374729021514",
                 "alternative": "A situação de que a mulher, em geral, vem tendo filhos cada vez mais para poder ter auxilio por parte do governo.",
+                "correct": false
+            },
+            {
+                "id": "202310082104376182254031",
+                "alternative": "Mostra que a mulher, em sua grande maioria, tem jornada dupla de trabalho.",
+                "correct": true
+            },
+            {
+                "id": "202310082104371484301355",
+                "alternative": "A mulher nas últimas décadas vem perdendo espaço no mercado de trabalho para se dedicar exclusivamente dos afazeres do lar.",
+                "correct": false
+            },
+            {
+                "id": "202310082104377569313215",
+                "alternative": "A situação da mulher no mercado de trabalho é muito cômoda, pois ela só exerce a função de secretária.",
                 "correct": false
             }
         ],
         "status": "active"
     },
     {
-        "position": 4,
-        "id": "1866672186",
+        "idQuiz": "202310082108417423190545",
+        "position": 1,
+        "id": "202310082110105416051482",
         "question": "A fase atual de expansão do capitalismo é chamada de globalização. Ela é consequência do avanço tecnológico, especialmente da modernização do sistema industrial. As tecnologias modernas permitem um aumento considerável da produtividade, isto é, com o mesmo número de trabalhadores consegue-se produzir mais. De forma crítica podemos concluir que:",
         "img": "",
         "question-sub": "",
         "alternatives": [
             {
-                "id": "2009142342393983434567899",
-                "alternative": "a produção cresce significativamente e sem problemas;",
-                "correct": false
-            },
-            {
-                "id": "156744444442313333",
-                "alternative": "o desemprego diminui significativamente, pois essas tecnologias são geradoras de mão de obra;",
-                "correct": false
-            },
-            {
-                "id": "200123983342113409875676",
-                "alternative": "a produção compensa o desemprego, justificando os meios;",
-                "correct": false
-            },
-            {
-                "id": "20014544788345998235698676",
+                "id": "202310082110109311720354",
                 "alternative": "o desemprego cresce significativamente, pois essas tecnologias são poupadoras de mão de obra;",
                 "correct": true
             },
             {
-                "id": "2001454478128346562156337986",
+                "id": "202310082110101624835951",
+                "alternative": "a produção cresce significativamente e sem problemas;",
+                "correct": false
+            },
+            {
+                "id": "202310082110105926284375",
+                "alternative": "a produção compensa o desemprego, justificando os meios;",
+                "correct": false
+            },
+            {
+                "id": "202310082110105375063841",
+                "alternative": "o desemprego diminui significativamente, pois essas tecnologias são geradoras de mão de obra;",
+                "correct": false
+            },
+            {
+                "id": "202310082110109612328051",
                 "alternative": "é natural que os diversos ramos industriais venham se modernizando, contudo, o desemprego é responsabilidade única do trabalhador que não se atualiza.",
                 "correct": false
             }
@@ -140,210 +180,72 @@
         "status": "active"
     },
     {
-        "position": 5,
-        "id": "186095666786",
-        "question": "Observe a imagem e assinale a alternativa CORRETA ",
-        "img": "figura-05.png",
+        "idQuiz": "202310082108417423190545",
+        "position": 2,
+        "id": "202310082111302337691084",
+        "question": "A fase atual de expansão do capitalismo é chamada de globalização. Ela é consequência do avanço tecnológico, especialmente da modernização do sistema industrial. As tecnologias modernas permitem um aumento considerável da produtividade, isto é, com o mesmo número de trabalhadores consegue-se produzir mais. De forma crítica podemos concluir que:",
+        "img": "",
         "question-sub": "",
         "alternatives": [
             {
-                "id": "2009142342393983434567899",
-                "alternative": "alta amplitude térmica.",
+                "id": "202310082111303154376452",
+                "alternative": "é natural que os diversos ramos industriais venham se modernizando, contudo, o desemprego é responsabilidade única do trabalhador que não se atualiza.",
+                "correct": false
+            },
+            {
+                "id": "202310082111303750224463",
+                "alternative": "o desemprego diminui significativamente, pois essas tecnologias são geradoras de mão de obra;",
+                "correct": false
+            },
+            {
+                "id": "202310082111301185940362",
+                "alternative": "a produção compensa o desemprego, justificando os meios;",
+                "correct": false
+            },
+            {
+                "id": "202310082111303154153782",
+                "alternative": "a produção cresce significativamente e sem problemas;",
+                "correct": false
+            },
+            {
+                "id": "202310082111305157832469",
+                "alternative": "o desemprego cresce significativamente, pois essas tecnologias são poupadoras de mão de obra;",
                 "correct": true
-            },
-            {
-                "id": "156744444442313333",
-                "alternative": "elevada evapotranspiração.",
-                "correct": false
-            },
-            {
-                "id": "200123983342113409875676",
-                "alternative": "reduzida taxa de insolação.",
-                "correct": false
-            },
-            {
-                "id": "20014544788345998235698676",
-                "alternative": "inexistência de pluviosidade.",
-                "correct": false
-            },
-            {
-                "id": "2001454478128346562156337986",
-                "alternative": "intensa umidade relativa do ar.",
-                "correct": false
             }
         ],
         "status": "active"
     },
     {
-        "position": 6,
-        "id": "1860927895289666786",
-        "question": "Analise a tirinha abaixo sobre as evoluções tecnológicas contemporâneas.",
-        "img": "figura-06.png",
-        "question-sub": "A tirinha acima reproduz uma crítica recorrentemente direcionada aos impactos gerados pela Terceira Revolução Industrial, assinale a alternativa CORRETA:",
-        "alternatives": [
-            {
-                "id": "2009142342393983434567899",
-                "alternative": "A excessiva capacidade de memória dos aparelhos industrializados.",
-                "correct": false
-            },
-            {
-                "id": "156744444442313333",
-                "alternative": "A superioridade do desempenho dos produtos face à capacidade humana.",
-                "correct": false
-            },
-            {
-                "id": "200123983342113409875676",
-                "alternative": "A alienação gerada pelas facilidades promovidas pelas tecnologias.",
-                "correct": true
-            },
-            {
-                "id": "20014544788345998235698676",
-                "alternative": "O processo de substituição do homem pela máquina no campo produtivo industrial.",
-                "correct": false
-            },
-            {
-                "id": "2001454478128346562156337986",
-                "alternative": "O desequilíbrio entre o excesso de informações e a incapacidade de armazená-las.",
-                "correct": false
-            }
-        ],
-        "status": "active"
-    },
-    {
-        "position": 7,
-        "id": "18609278921367986",
-        "question": "A Amazônia é considerada uma floresta tropical. Entre as suas principais características, podemos destacar:",
+        "idQuiz": "202310082108417423190545",
+        "position": 3,
+        "id": "202310082111401567329340",
+        "question": "A fase atual de expansão do capitalismo é chamada de globalização. Ela é consequência do avanço tecnológico, especialmente da modernização do sistema industrial. As tecnologias modernas permitem um aumento considerável da produtividade, isto é, com o mesmo número de trabalhadores consegue-se produzir mais. De forma crítica podemos concluir que:",
         "img": "",
-        "question-sub":"",
+        "question-sub": "",
         "alternatives": [
             {
-                "id": "2009142342393983434567899",
-                "alternative": "Clima quente e seco / elevada precipitação / vegetação rasteira",
+                "id": "202310082111403037129564",
+                "alternative": "é natural que os diversos ramos industriais venham se modernizando, contudo, o desemprego é responsabilidade única do trabalhador que não se atualiza.",
                 "correct": false
             },
             {
-                "id": "156744444442313333",
-                "alternative": "Clima quente e úmido / baixa precipitação / vegetação arbustiva",
-                "correct": false
-            },
-            {
-                "id": "200123983342113409875676",
-                "alternative": "Clima frio e úmido / elevada precipitação / vegetação gramínea",
-                "correct": false
-            },
-            {
-                "id": "20014544788345998235698676",
-                "alternative": "Clima quente e úmido / elevada precipitação / vegetação arbórea",
+                "id": "202310082111406224314839",
+                "alternative": "o desemprego cresce significativamente, pois essas tecnologias são poupadoras de mão de obra;",
                 "correct": true
             },
             {
-                "id": "2001454478128346562156337986",
-                "alternative": "Clima frio e seco / baixa precipitação / vegetação arbórea",
-                "correct": false
-            }
-        ],
-        "status": "active"
-    },
-    {
-        "position": 8,
-        "id": "186092789213671254607986",
-        "question": "Sobre a economia globalizada, analise a imagem abaixo e em seguida assinale a alternativa CORRETA:",
-        "img": "figura-08.png",
-        "question-sub":"",
-        "alternatives": [
-            {
-                "id": "2009142342393983434567899",
-                "alternative": "Houve uma homogeneização das culturas e fez com que uma rede de fast food mudasse sua logomarca.",
+                "id": "202310082111405754311398",
+                "alternative": "a produção cresce significativamente e sem problemas;",
                 "correct": false
             },
             {
-                "id": "156744444442313333",
-                "alternative": "Devido a imagem que as transnacionais apresentam para o mundo, há uma criatividade de outros para parecer com as originais e, assim, atrair mais clientes.",
-                "correct": true
-            },
-            {
-                "id": "200123983342113409875676",
-                "alternative": "A globalização tem promovido uma melhora significativa da população que passa a ter a autorização pra usar suas logomarcas de forma indiscriminada.",
+                "id": "202310082111406305432812",
+                "alternative": "o desemprego diminui significativamente, pois essas tecnologias são geradoras de mão de obra;",
                 "correct": false
             },
             {
-                "id": "20014544788345998235698676",
-                "alternative": "Uma rede de fast food tem promovida uma popularização de sua marca, autorizando que ocorra uma mudança no nome, mas mantendo a sua estrutura.",
-                "correct": false
-            },
-            {
-                "id": "2001454478128346562156337986",
-                "alternative": "Estabeleceu a diminuição das desigualdades sociais entre as nações do mundo com a massificação da cultura dos fast food.",
-                "correct": false
-            }
-        ],
-        "status": "active"
-    },
-    {
-        "position": 9,
-        "id": "186092217899367986",
-        "question": "Observe esta imagem:",
-        "img": "figura-09.png",
-        "question-sub":"Esta imagem nos mostra:",
-        "alternatives": [
-            {
-                "id": "2009142342393983434567899",
-                "alternative": "a sintonia do desenvolvimento industrial com a natureza",
-                "correct": false
-            },
-            {
-                "id": "156744444442313333",
-                "alternative": "um ambiente agrário.",
-                "correct": false
-            },
-            {
-                "id": "200123983342113409875676",
-                "alternative": "a poluição causada pelas queimadas em plantações de cana de açúcar.",
-                "correct": false
-            },
-            {
-                "id": "20014544788345998235698676",
-                "alternative": "a poluição causada pelo desenvolvimento industrial.",
-                "correct": true
-            },
-            {
-                "id": "2001454478128346562156337986",
-                "alternative": "O desenvolvimento econômico sem danos ao meio ambiente.",
-                "correct": false
-            }
-        ],
-        "status": "active"
-    },
-    {
-        "position": 10,
-        "id": "18609221789936792134",
-        "question": "A desigualdade social EXPLICA-SE:",
-        "img": "",
-        "question-sub":"",
-        "alternatives": [
-            {
-                "id": "2009142342393983434567899",
-                "alternative": "Pela distribuição da riqueza de acordo com o esforço de cada um no desempenho de seu trabalho.",
-                "correct": false
-            },
-            {
-                "id": "156744444442313333",
-                "alternative": "Pela divisão da sociedade em classes sociais, decorrente da separação entre proprietários e não proprietários dos meios de produção.",
-                "correct": false
-            },
-            {
-                "id": "200123983342113409875676",
-                "alternative": "Pelas diferenças de inteligência e habilidade inatas dos indivíduos, determinadas biologicamente.",
-                "correct": true
-            },
-            {
-                "id": "20014544788345998235698676",
-                "alternative": "Pela apropriação das condições de trabalho pelos homens mais capazes em contextos históricos, marcados pela igualdade de oportunidades.",
-                "correct": false
-            },
-            {
-                "id": "2001454478128346562156337986",
-                "alternative": "Pela capacidade de cada indivíduo de superar suas necessidades básicas de alimentação.",
+                "id": "202310082111404123516207",
+                "alternative": "a produção compensa o desemprego, justificando os meios;",
                 "correct": false
             }
         ],
