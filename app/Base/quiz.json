@@ -182,35 +182,25 @@
     {
         "idQuiz": "202310082108417423190545",
         "position": 2,
-        "id": "202310082111302337691084",
-        "question": "A fase atual de expansão do capitalismo é chamada de globalização. Ela é consequência do avanço tecnológico, especialmente da modernização do sistema industrial. As tecnologias modernas permitem um aumento considerável da produtividade, isto é, com o mesmo número de trabalhadores consegue-se produzir mais. De forma crítica podemos concluir que:",
+        "id": "202310282046276582401452",
+        "question": "afafa",
         "img": "",
-        "question-sub": "",
+        "question-sub": "adfafa",
         "alternatives": [
             {
-                "id": "202310082111303154376452",
-                "alternative": "é natural que os diversos ramos industriais venham se modernizando, contudo, o desemprego é responsabilidade única do trabalhador que não se atualiza.",
-                "correct": false
-            },
-            {
-                "id": "202310082111303750224463",
-                "alternative": "o desemprego diminui significativamente, pois essas tecnologias são geradoras de mão de obra;",
-                "correct": false
-            },
-            {
-                "id": "202310082111301185940362",
-                "alternative": "a produção compensa o desemprego, justificando os meios;",
-                "correct": false
-            },
-            {
-                "id": "202310082111303154153782",
-                "alternative": "a produção cresce significativamente e sem problemas;",
-                "correct": false
-            },
-            {
-                "id": "202310082111305157832469",
-                "alternative": "o desemprego cresce significativamente, pois essas tecnologias são poupadoras de mão de obra;",
+                "id": "202310282046272735651890",
+                "alternative": "adfafa",
                 "correct": true
+            },
+            {
+                "id": "202310282046275971343522",
+                "alternative": "adfaf",
+                "correct": false
+            },
+            {
+                "id": "202310282046279074228541",
+                "alternative": "adfaf",
+                "correct": false
             }
         ],
         "status": "active"
@@ -218,34 +208,29 @@
     {
         "idQuiz": "202310082108417423190545",
         "position": 3,
-        "id": "202310082111401567329340",
-        "question": "A fase atual de expansão do capitalismo é chamada de globalização. Ela é consequência do avanço tecnológico, especialmente da modernização do sistema industrial. As tecnologias modernas permitem um aumento considerável da produtividade, isto é, com o mesmo número de trabalhadores consegue-se produzir mais. De forma crítica podemos concluir que:",
+        "id": "202310282047329523425746",
+        "question": "adsfsaqrqerer",
         "img": "",
-        "question-sub": "",
+        "question-sub": "qererq",
         "alternatives": [
             {
-                "id": "202310082111403037129564",
-                "alternative": "é natural que os diversos ramos industriais venham se modernizando, contudo, o desemprego é responsabilidade única do trabalhador que não se atualiza.",
-                "correct": false
-            },
-            {
-                "id": "202310082111406224314839",
-                "alternative": "o desemprego cresce significativamente, pois essas tecnologias são poupadoras de mão de obra;",
+                "id": "202310282047320316554348",
+                "alternative": "fefefeefefe",
                 "correct": true
             },
             {
-                "id": "202310082111405754311398",
-                "alternative": "a produção cresce significativamente e sem problemas;",
+                "id": "202310282047323517218235",
+                "alternative": "feffefe",
                 "correct": false
             },
             {
-                "id": "202310082111406305432812",
-                "alternative": "o desemprego diminui significativamente, pois essas tecnologias são geradoras de mão de obra;",
+                "id": "202310282047324712552339",
+                "alternative": "aaa",
                 "correct": false
             },
             {
-                "id": "202310082111404123516207",
-                "alternative": "a produção compensa o desemprego, justificando os meios;",
+                "id": "202310282047327923540431",
+                "alternative": "adfaf",
                 "correct": false
             }
         ],

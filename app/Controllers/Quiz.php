@@ -47,6 +47,7 @@ class Quiz extends BaseController
             }
             
             $quizQuestion = $quiz->getByPosition($lastQuestionAswered);
+            
         } else {
             $this->restart();
         }
@@ -122,6 +123,7 @@ class Quiz extends BaseController
 
         $quiz = new QuizModel();
         $quizQuestion = $quiz->getById($idQuestion, $idAlternative);
+     
 
         $cont = 0;
         if (!session()->has('hits')) {

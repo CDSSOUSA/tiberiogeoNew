@@ -107,13 +107,19 @@ $javascript = [
     <section class="block-wrapper mt-15">
         <div class="container">
            
-
+           
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class=" border-left-<?= $msgs['alert'] ?> alert alert-show alert-<?= $msgs['alert'] ?>">
-                            <strong><?= $msgs['message']; ?></strong>
+
+                        <?php if(session()->has('success')):
+                            //dd(session()->get('success'));
+                            ?>
+
+                        <div class=" border-left-<?= session()->get('success')['alert'] ?> alert alert-show alert-<?= session()->get('success')['alert'] ?>">
+                            <strong><?= session()->get('success')['message'] ?></strong>
                         </div>
+                        <?php endif; session()->remove('success')?>    
                         <div class="contact-box ts-grid-box">
                             <div class="clearfix">
                                 <h2 class="float-left"><span>CRIAR QUESTÃO SIMULADO :: <?= $idQuizMain; ?></span></h2>
@@ -227,7 +233,7 @@ $javascript = [
                                 <table class="table table-striped">
                                     <thead class="thead-dark">
                                         <tr>
-                                            <th>Id</th>
+                                            <th>Ordem</th>
                                             <th>Pergunta</th>
                                             <th>Complemento</th>
 
@@ -241,10 +247,11 @@ $javascript = [
                                         foreach ($data as $item) : ?>
                                             <tr>
 
-                                                <td><?= $item['id']; ?></td>
+                                                <td><?= $item['position']; ?></td>
                                                 <td><?= $item['question']; ?></td>
                                                 <td><?= $item['question-sub']; ?></td>
 
+                                                <td><?= anchor('buildQuiz/deleteQuestion/'.$item['id'].'/'.$idQuizMain, 'Excluir', ['class'=>'btn btn-primary']);?></td>
                                                 <td>Editar</td>
 
                                             </tr>

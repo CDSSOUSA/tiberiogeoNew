@@ -5,7 +5,6 @@
 header('Content-type: text/html; charset=utf8');
 setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'Portuguese_Brazil');
 
-
 ?>
 
 <div class="body-inner-content category-layout-6">
@@ -120,20 +119,23 @@ setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'Portuguese_Brazil');
                                         <div class="text-center p-2">
                                             <img class="img-fluid" src="<?=base_url().'/assets/img/quiz/'.$quizzes['img'];?>"/>                                            
                                         </div>
+                                        <?php endif;?>
                                         <?php if($quizzes['question-sub']):?>
                                             <h3 class="justify-question"><?=$quizzes['question-sub'];?></h3>
                                             <?php endif;?>
-                                    <?php endif;?>
+                                    
                                     <div class="radio-toolbar">
                                         <?php //shuffle($quizzes['alternatives']);
                                         //dd($quizzes['alternatives']);
                                         foreach ($quizzes['alternatives'] as $key => $alternatives) : ?>
+                                            <?php if($alternatives['id']):?>
                                             <div class="form-check">
                                                 <input class="form-check-input justify-question" type="radio" name="alternative" id="<?= $alternatives['id']; ?>" value="<?= $alternatives['id']; ?>">
                                                 <label class="form-check-label justify-question" for="<?= $alternatives['id']; ?>">
                                                     <?= convertNumberString($key) . ' ' . $alternatives['alternative']; ?>
                                                 </label>
                                             </div>
+                                            <?php endif;?>
                                         <?php endforeach; ?>
                                     </div>
                                     <hr>
