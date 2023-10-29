@@ -758,9 +758,11 @@ class Build extends BaseController
             //return view('/admin/blog/cadastrar-blog', $data);
         }
 
+        $datas = $school->getSchool();        
 
         $data = [
-            'erro' => ''
+            'erro' => '',
+	     "dataSchool" => $datas,
         ];
 
         $parser = \Config\Services::renderer();
