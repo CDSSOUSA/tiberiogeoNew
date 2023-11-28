@@ -143,10 +143,16 @@
             "date": "14/09/2023"
         },
         {
-            "id": "202310291846222135048735",
+            "id": "202311272348344627285501",
             "title": "Dinâmica Populacional - 3º ANO",
-            "link": "/text/PopulacaoMundial_Conceitos.pdf",
-            "date": "29/10/2023"
+            "link": "/text/Slide_PopulacaoMundial_Conceitos.pdf",
+            "date": "27/11/2023"
+        },
+        {
+            "id": "202311272349526545748032",
+            "title": "Urbanização Mundial - 3º ANO",
+            "link": "/text/SlideUrbanizacaoMundial_1.pdf",
+            "date": "27/11/2023"
         }
     ],
     "text": [
@@ -209,6 +215,18 @@
             "title": "Impactos Ambientais - 3º ANO",
             "link": "/text/ImpactosAmbientais_3Ano_1.pdf",
             "date": "14/09/2023"
+        },
+        {
+            "id": "202311272346414015832572",
+            "title": "Dinâmica da População Mundial",
+            "link": "/text/Texto3Ano_PopulacaoMundial.pdf",
+            "date": "27/11/2023"
+        },
+        {
+            "id": "202311272349164589314752",
+            "title": "Urbanização Mundial",
+            "link": "/text/Texto3Ano_UrbanizacaoMundial_1.pdf",
+            "date": "27/11/2023"
         }
     ]
 }
